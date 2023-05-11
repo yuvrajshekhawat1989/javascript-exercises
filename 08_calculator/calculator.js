@@ -7,11 +7,12 @@ const subtract = function (op1, op2) {
 };
 
 const sum = function (arr) {
-  let ans = 0;
-  for (let j = 0; j < arr.length; j++) {
-    ans += arr[j];
-  }
-  return ans;
+  // let ans = 0;
+  // for (let j = 0; j < arr.length; j++) {
+  //   ans += arr[j];
+  // }
+  // return ans;
+  return arr.reduce((value1,value2)=>{return value1+value2},0)
 };
 
 const multiply = function (arr) {
